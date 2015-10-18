@@ -21,6 +21,8 @@ Pod::Spec.new do |s|
   
   s.default_subspec = 'Core'
 
+  s.tvos.deployment_target = '9.0
+
   s.subspec 'Core' do |core|
     core.source_files = 'SDWebImage/{NS,SD,UI}*.{h,m}'
     core.exclude_files = 'SDWebImage/UIImage+WebP.{h,m}'
